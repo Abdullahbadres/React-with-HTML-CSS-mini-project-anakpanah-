@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anak Panah Coffee +</title>
+
+    <!-- buat telwen CSS -->
+    <link rel="stylesheet" href="./output.css">
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+
+    <style>
+        h1 { font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100 scroll-smooth">
+
+    <!-- Fixed Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-black text-white h-16 flex items-center px-6 shadow-lg z-50">
+        <div class="container mx-auto flex justify-between items-center w-full">
+            <!-- Logo -->
+            <img class="h-12 w-auto" src="https://i.ibb.co.com/rGwkb5cs/logo-anak-panah-kopi.png" alt="Anak Panah Coffee Logo">
+
+            <!-- Center Tagline (Always Visible) -->
+            <p class="text-sm md:text-2xl font-light uppercase tracking-wide text-center flex-1">
+                OUR COFFEE CAN FIX YOUR LIFE
+            </p>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex gap-4 text-lg font-medium">
+                <a href="#HOME" class="hover:text-amber-400 transition">HOME</a>
+                <a href="#BEST SIGNATURE MENU" class="hover:text-amber-400 transition">BEST SIGNATURE MENU</a>
+                <a href="#FULL MENU" class="hover:text-amber-400 transition">FULL MENU</a>
+                <a href="#ABOUT US" class="hover:text-amber-400 transition">ABOUT US</a>
+                <a href="https://wa.me/+628987588850">
+                    <img class="size-6" src="https://i.ibb.co.com/1JJgchrt/apk-contact-us.jpg" alt="Contact Icon">
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden focus:outline-none ml-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-black text-white flex flex-col text-center py-4 shadow-lg">
+ <!-- Tagline in Mobile Menu -->
+            <a href="#HOME" class="py-2 hover:bg-amber-400">HOME</a>
+            <a href="#BEST SIGNATURE MENU" class="py-2 hover:bg-amber-400">BEST SIGNATURE MENU</a>
+            <a href="#FULL MENU" class="py-2 hover:bg-amber-400">FULL MENU</a>
+            <a href="#ABOUT US" class="py-2 hover:text-amber-400">ABOUT US</a>
+            <a href="https://wa.me/+628987588850" class="py-2 hover:text-amber-400 transition">
+                <img class="size-6 mx-auto " src="https://i.ibb.co.com/1JJgchrt/apk-contact-us.jpg" alt="Contact Icon">
+            </a>
+            <img class="h-12 w-auto mx-auto mt-2" src="https://i.ibb.co.com/rGwkb5cs/logo-anak-panah-kopi.png" alt="Anak Panah Coffee Logo">
+        </div>
+    </nav>
+
+    <script>
+        // JavaScript for Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        })
+    </script>
+    <!-- </header> -->
+
+    <section id="HOME" class="relative bg-cover bg-center py-24 px-6 md:px-20" style="background-image: url('https://i.ibb.co.com/RTdF4z3X/backgroundarrow.png');">
+        <!-- Overlay for better visibility -->
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 relative z-10">
+            <div class="slide">
+                <div><img class="w-full h-auto max-w-[800px] sm:max-w-[900px] md:max-w-[700px] lg:max-w[1000px] aspect-[16/9] sm:aspect[4/3] md:aspect[3/2] rounded-lg shadow-md mx-auto" src="https://i.ibb.co.com/27BCrV1P/APK-foodview2.png" alt="Anak Panah Coffee"></div>
+                <div><img class="w-full h-auto max-w-[800px] sm:max-w-[900px] md:max-w-[700px] lg:max-w[1000px] aspect-[16/9] sm:aspect[4/3] md:aspect[3/2] rounded-lg shadow-md mx-auto" src="https://i.ibb.co.com/XZY1bjZY/ANAK-PANAH-VIEW.jpg" alt="Anak Panah Coffee"></div>
+                <div><img class="w-full h-auto max-w-[800px] sm:max-w-[900px] md:max-w-[700px] lg:max-w[1000px] aspect-[16/9] sm:aspect[4/3] md:aspect[3/2] rounded-lg shadow-md mx-auto" src="https://i.ibb.co.com/dsDyjxp1/ANAK-PANAH.jpg" alt="Anak Panah Coffee"></div>
+                <div><img class="w-full h-auto max-w-[800px] sm:max-w-[900px] md:max-w-[700px] lg:max-w[1000px] aspect-[16/9] sm:aspect[4/3] md:aspect[3/2] rounded-lg shadow-md mx-auto" src="https://i.ibb.co.com/WvqS1q66/ANAKPANAHFOOD-W-COFFEE.jpg" alt="Anak Panah Coffee"></div>
+                <div><img class="w-full h-auto max-w-[800px] sm:max-w-[900px] md:max-w-[700px] lg:max-w[1000px] aspect-[16/9] sm:aspect[4/3] md:aspect[3/2] rounded-lg shadow-md mx-auto" src="https://i.ibb.co.com/8DNr00rK/APK1.jpg" alt="Anak Panah Coffee"></div>
+                <div><img class="w-full h-auto max-w-[800px] sm:max-w-[900px] md:max-w-[700px] lg:max-w[1000px] aspect-[16/9] sm:aspect[4/3] md:aspect[3/2] rounded-lg shadow-md mx-auto" src="https://i.ibb.co.com/p6WrHJkH/APK2.jpg" alt="Anak Panah Coffee"></div>
+            </div>
+        </div>
+
+        <!-- Home Section Description -->
+        <div class="relative z-10 mt-10 max-w-4xl mx-auto bg-white/80 p-6 md:p-10 rounded-lg shadow-lg">
+            <h2 class="text-center text-xl md:text-3xl font-extrabold text-gray-900 mb-4">Welcome to Anak Panah Coffee</h2>
+            <p class="text-lg md:text-xl font-sans font-light leading-relaxed text-gray-800 text-justify">
+                Anak Panah Kopi (APK), yes it is Anak Panah! If you all wondering about how’s our social café named because I want to make this social café served in a priority-sharpened in a best quality with our archers (re: chefs and barista). Our all best service quality to customers is the first point above all, and not to forget within our commitment and consistency that’s made us one of the best social café in Central Java.
+            </p>
+            <p class="text-lg md:text-xl font-sans font-light leading-relaxed text-gray-800 text-justify mt-4">
+                This social café not only segmented for millennials, gen-z, professionals, or students, this social café built for everyone or might be if you’re lone-wolf will be fully energized with our menu and our cozy place that didn’t scared your bills.    
+            </p>
+            <p class="text-lg md:text-xl font-sans font-semibold text-gray-900 text-center mt-6">
+                ☕ Your perfect experience waits at Anak Panah Coffee! ☕
+            </p>
+        </div>
+    </section>
+
+    <!-- jQuery & Slick.js online source code-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <!-- js for slider -->
+    <script>
+        $(document).ready(function(){
+            $('.slide').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                speed: 700,
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                pauseOnHover: true,
+                infinite: true,
+                fade: true,
+                cssEase: 'linear',
+            });
+        });
+    </script>
+    <!-- MENU SECTION -->
+     <section id="BEST SIGNATURE MENU"
+    <h2 class="text-xl md:text-4xl font-bold mb-4 text-slate-500 text-center">
+        FIND OUR BEST SIGNATURE MENU FOR YOU
+    </h2>
+    </section>
+    <hr style="color:bisque; margin: 10px; margin-left: 0px; margin-right: 0px;text-decoration-thickness: 5px; border-width: 2px;">
+    <section class="container mx-auto px-4 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- COFFEE -->
+            <div>
+                <p class="text-amber-700 text-3xl font-semibold text-center bg-amber-100 py-2 rounded-lg">COFFEE BASED</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                    <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-amber-100 p-2 rounded-md">Kopi Klepon</h3><hr/>
+                        <ul class="list-disc list-inside">
+                            <li>Espresso</li>
+                            <li>Steamed Milk</li>
+                            <li>Vanilla Syrup</li>
+                            <li>Coconut Ball</li>
+                        </ul>
+                        <div class="overflow-hidden rounded-lg mt-4">
+                        <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-150" src="https://i.ibb.co.com/jkZJBGkD/kopiklepon.jpg" alt="Kopi Klepon"/>
+                </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-amber-100 p-2 rounded-md">Cold Brew Apple</h3><hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Concentrated-Coffee</li>
+                        <li>Apple Juice</li>
+                        <li>Cinnamon Hint</li>
+                    </ul>
+                    <div class="overflow-hidden rounded-lg mt-4">
+                    <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-150" src="https://i.ibb.co.com/F4NxLjr8/coldbrewapel.jpg" alt="Cold Brew Apple"/>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-amber-100 p-2 rounded-md">Chocopresso</h3><hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Espresso</li>
+                        <li>Chocolate Syrup</li>
+                        <li>Steamed Milk</li>
+                        <li>Chocolate Chips</li>
+                    </ul>
+                    <div class="overflow-hidden rounded-lg mt-4">
+                    <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-150" src="https://i.ibb.co.com/SDXPFfVC/chocopresso.jpg" alt="Chocopresso"/>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-amber-100 p-2 rounded-md">Coffee Latte</h3><hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Espresso</li>
+                        <li>Steamed Milk</li>
+                        <li>Vanilla Syrup</li>
+                    </ul>
+                    <div class="overflow-hidden rounded-lg mt-4">
+                    <img class="aspect-fit h-auto rounded-lg shadow-md hover:scale-150" src="https://i.ibb.co.com/BHbD0t6j/coffeelatte.webp" alt="Coffee Latte"/>
+                </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-amber-100 p-2 rounded-md">Caramel Affogato</h3><hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Espresso</li>
+                        <li>Caramel Syrup</li>
+                        <li>A Scoop of Ice Cream</li>
+                    </ul>
+                    <div class="overflow-hidden rounded-lg mt-4">
+                    <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-150" src="https://i.ibb.co.com/fYMWPB8r/caramelaffo.jpg" alt="Caramel Affogato"/>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-amber-100 p-2 rounded-md">Doppio</h3><hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Espresso</li>
+                        <li>Espresso</li>
+                    </ul>
+                    <div class="overflow-hidden rounded-lg mt-4">
+                    <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-150" src="https://i.ibb.co.com/pjtLXwmM/doppio.jpg" alt="Doppio"/>
+                </div>
+                </div>
+            </div>
+        </div>
+                <!-- non coffee -->
+                 <div>
+            <p class="text-sky-800 text-3xl font-semibold text-center bg-sky-100 py-2 rounded-lg">NON COFFEE</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-sky-100 p-2 rounded-md">Chocorange</h3><hr/>
+                        <ul class="list-disc list-inside">
+                            <li>Chocolate Syrup</li>
+                            <li>Orange Juice</li>
+                            <li>Steamed Milk</li>
+                            <li>Orange Slice</li>
+                        </ul>
+                        <div class="overflow-hidden rounded-lg mt-4">
+                        <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-150" src="https://i.ibb.co.com/XMzj6Br/chocoorange.jpg" alt="Chocorange"/>
+                    </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                        <h3 class="text-lg font-semibold bg-sky-100 p-2 rounded-md">Mixed Smoothies</h3> <hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Blended Yogurt & Ice Cream</li>
+                        <li>Slices Strawberries</li>
+                        <li>Slices Fruits</li>
+                        <li>Whole Oats</li>
+                    </ul>
+                    <div class="overflow-hidden rounded-lg mt-4">
+                    <img class="aspect-auto w-52 md:w-72 lg:w-auto rounded-lg shadow-md hover:scale-150" src="https://i.ibb.co.com/9Hf9jQD6/smoothiesbowl.jpg" alt="MixedBowlSmoothies"/>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-sky-100 p-2 rounded-md">Charcoal</h3><hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Dark Chocolate syrup</li>
+                        <li>Steamed Milk</li>
+                        <li>Baked Caramelized Milk</li>
+                        <li>Hazelnut Syrup</li>
+                    </ul>
+                        <div class="overflow-hidden rounded-lg mt-4">
+                        <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-200" src="https://i.ibb.co.com/F4NDj7pR/charcoal.webp" alt="Charcoal"/>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-sky-100 p-2 rounded-md">Strawberry Shortcake</h3><hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Strawberry Syrup</li>
+                        <li>Steamed Milk</li>
+                        <li>Strawberry Slices</li>
+                        <li>Mini Cheese Cake</li>
+                    </ul>
+                    <div class="overflow-hidden rounded-lg mt-4">
+                    <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-150" src="https://i.ibb.co.com/FkKchKC0/strawberryshortcake.webp" alt="Strawberry Shortcake"/>
+                </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-sky-100 p-2 rounded-md">Banana Smoothies</h3><hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Blended Yogurt & Ice Cream</li>
+                        <li>Slices Bananas</li>
+                        <li>Whole Oats</li>
+                        <li>Cinnamons Hint</li>
+                    </ul>
+                    <div class="overflow-hidden rounded-lg mt-4">
+                    <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-150" src="https://i.ibb.co.com/Kc6QkM5r/bananasmoothies.jpg" alt="Banana Smoothies"/>
+                </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-sky-100 p-2 rounded-md">Choco Campfire</h3> <hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Pure Dark Chocolate</li>
+                        <li>Fresh Milk</li>
+                        <li>Baked Marshmallow</li>
+                    </ul>
+                    <div class="overflow-hidden rounded-lg mt-4">
+                    <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-150" src="https://i.ibb.co.com/sLDBC5b/chococampfire.jpg" alt="ChocoCampFire"/>
+            </div>
+            </div>
+            </div>
+</section>
+<br />
+<br />
+<br />
+<section id="BOWL" class="container mx-auto px-4 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- bowl -->
+        <div>
+            <p class="text-yellow-800 text-3xl font-semibold text-center bg-slate-200 py-2 rounded-lg">BOWL</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                <!-- Bowl Items -->
+                <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                    <h3 class="text-lg font-semibold bg-slate-200 p-2 rounded-md">Chicken Rice Lemongrass</h3> <hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Fried Chicken</li>
+                        <li>Cooked Rice w/ Lemongrass</li>
+                        <li>Additional Sauce</li>
+                    </ul>
+                    <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/Vp023DSh/chickenlemongrass.jpg" alt="lemongrasschicken"/>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                <h3 class="text-lg font-semibold bg-slate-200 p-2 rounded-md">Loco Moco</h3> <hr/>
+                    <li>Cooked Rice</li>
+                    <li>Sunny Side Up Egg</li>
+                    <li>Beef Patty</li>
+                    <li>Additional Sauce</li>
+                </ul>
+                <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/SwF6WQNF/locomoco.jpg" alt="Loco Moco"/>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                <h3 class="text-lg font-semibold bg-slate-200 p-2 rounded-md">Chop Suey!</h3><hr/>
+                <ul class="list-disc list-inside">
+                    <li>Mixed Veggies</li>
+                    <li>Mixed Meats</li>
+                    <li>Sausages</li>
+                    <li>Mushrooms</li>
+                </ul>
+                <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/F4cFzPC2/chopsuey.jpg" alt="ChopSuey!"/>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                <h3 class="text-lg font-semibold bg-slate-200 p-2 rounded-md">Mushroom Soups</h3><hr/>
+                <ul class="list-disc list-inside">
+                    <li>Mushrooms</li>
+                    <li>Other Veggies</li>
+                    <li>Tomatoes</li>
+                </ul>
+                <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/5gV9zzdb/mushroomsoup.jpg" alt="Mushroom Soups"/>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                <h3 class="text-lg font-semibold bg-slate-200 p-2 rounded-md">INSTANT NOODLES</h3><hr/>
+                <ul class="list-disc list-inside">
+                    <li>Noodles</li>
+                    <li>Requested Toppings</li>
+                    <li>Requested Eggs</li>
+                    <li>Additional Sauce</li>
+                </ul>
+                <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/ZpckFsYV/instant-noodles.jpg" alt="Noodles"/>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                <h3 class="text-lg font-semibold bg-slate-200 p-2 rounded-md">Beef Balado</h3><hr/>
+                <ul class="list-disc list-inside">
+                    <li>Cooked Rice</li>
+                    <li>Spicy Smoked Beef</li>
+                    <li>Additional Sauce</li>
+                    <li>Sunny Side Up Egg</li>
+                </ul>
+                <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/d0Zhs5gp/beefbalado.jpg" alt="Beef Balado"/>
+            </div>
+        </div>
+    </div>
+    <!-- BITES -->
+    <div>
+        <p class="text-emerald-600 text-3xl font-semibold text-center bg-emerald-100 py-2 rounded-lg">BITES</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+            <!-- Bites Items -->
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                <h3 class="text-lg font-semibold bg-emerald-100 p-2 rounded-md">Egg n Cheese Toast</h3><hr/>
+                <ul class="list-disc list-inside">
+                    <li>Toasted Bread</li>
+                    <li>Sunny Side Up Egg</li>
+                    <li>Mozzarella and Meats</li>
+                </ul>
+                <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/LXFd40qN/eggcheesetoast.jpg" alt="eggncheesetoast"/>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                <h3 class="text-lg font-semibold bg-emerald-100 p-2 rounded-md">Animal Fries</h3> <hr/>
+                <ul class="list-disc list-inside">
+                    <li>Chicken Sticks</li>
+                    <li>Sausages</li>
+                    <li>Chicken Wings</li>
+                    <li>Additional Sauce</li>
+                </ul>
+                <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/VcXLtYrP/animal-fries.jpg" alt="animalfries"/>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                <h3 class="text-lg font-semibold bg-emerald-100 p-2 rounded-md">Mix Platter</h3><hr/>
+                    <ul class="list-disc list-inside">
+                        <li>Dory</li>
+                        <li>Shrimp</li>
+                        <li>Potato Wedges</li>
+                        <li>Tartar Sauce</li>
+                        <li>Additional Sauce</li>
+                    </ul>
+                    <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/Pv8h25p9/mixplatter.jpg" alt="mixplatter"/>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                <h3 class="text-lg font-semibold bg-emerald-100 p-2 rounded-md">Nachos n Cheese</h3><hr/>
+                <ul class="list-disc list-inside">
+                    <li>Nachos Chips</li>
+                    <li>Melted Cheese</li>
+                    <li>Additional Sauce</li>
+                </ul>
+                <img class="aspect-square h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/Cpq7ysSh/nachoncheese.jpg" alt="nachoncheese"/>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                <h3 class="text-lg font-semibold bg-emerald-100 p-2 rounded-md">French Fries</h3><hr/>
+                <ul class="list-disc list-inside">
+                    <li>Classic Fries</li>
+                    <li>Signature Sauce</li>
+                    <li>Additional Sauce</li>
+                </ul>
+                <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/dJGw9xRc/french-fries.jpg" alt="frenchfries"/>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col justify-between">
+                <h3 class="text-lg font-semibold bg-emerald-100 p-2 rounded-md">Onion Rings</h3><hr/>
+                <ul class="list-disc list-inside">
+                    <li>Classic Onion Fries</li>
+                    <li>Signature Sauce</li>
+                    <li>Additional Sauce</li>
+                </ul>
+                <img class="aspect-auto h-auto rounded-lg shadow-md hover:scale-125" src="https://i.ibb.co.com/39Rh124B/onion-ring.jpg" alt="onionring"/>
+            </div>
+        </div>
+    </div>
+</section>
+<br />
+<br />
+<!-- FULL MENU -->
+<section id="FULL MENU" class="relative bg-cover bg-center py-24 px-6 md:px-20" style="background-image: url('https://i.ibb.co.com/Q7xGCfZR/bg.png');">
+    <h2 class="text-4xl font-bold mb-6 text-pink-800 text-center">OUR MENU</h2>
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Menu Categories -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Coffee -->
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Coffee</h3>
+                <ul class="space-y-2">
+                    <li class="flex justify-between border-b pb-2"><span>Espresso</span> <span>18k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Caramel Affogato</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Americano</span> <span>23k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Cappuccino</span> <span>28k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Coffee Latte</span> <span>28k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Flat White</span> <span>28k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Magic</span> <span>28k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Spanish Latte</span> <span>30k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Mochaccino</span> <span>33k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Hazelnut Mocca</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Caramel Latte</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Vanilla Latte</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Irish Latte</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Hazelnut Latte</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Seasalt Latte</span> <span>28k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Chocopresso</span> <span>38k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Kopi Klepon</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Coldbrew Apple</span> <span>35k</span></li>
+                </ul>
+            </div>
+
+            <!-- Non Coffee -->
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Non Coffee</h3>
+                <ul class="space-y-2">
+                    <li class="flex justify-between border-b pb-2"><span>Red Velvet</span> <span>33k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Matcha</span> <span>33k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Charcoal</span> <span>33k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Taro</span> <span>33k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Choco Orange</span> <span>30k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Choco Madness</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Choco Campfire</span> <span>30k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Witch Forest</span> <span>38k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Hansel and Gretel</span> <span>38k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Strawberry Shortcake</span> <span>38k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Mixed Smoothies</span> <span>45k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Marigold Tea</span> <span>30k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Earl Grey Tea</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Honey Lemon Tea</span> <span>30k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Lychee Tea</span> <span>30k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Lemongrass Tea</span> <span>15k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Classic Tea</span> <span>13k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Classic Tea</span> <span>13k</span></li>
+                </ul>
+            </div>
+
+            <!-- Bites -->
+            <div> <br/> <br/>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Bites</h3>
+                <ul class="space-y-2">
+                    <li class="flex justify-between border-b pb-2"><span>Mix Platter</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Chicken Platter</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Nachos n Cheese</span> <span>30k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Animal Fries</span> <span>28k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>French Fries</span> <span>25k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Onion Rings</span> <span>20k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Egg n Cheese Toast</span> <span>25k</span></li>
+                </ul>
+            </div>
+
+            <!-- Bowl -->
+            <div> <br /> <br/>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Bowls</h3>
+                <ul class="space-y-2">
+                    <li class="flex justify-between border-b pb-2"><span>Loco Moco</span> <span>45k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Chicken Rice Lemongrass</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Beef Balado</span> <span>45k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>APK Crunchy Chicken Fries</span> <span>45k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Chop Suey!</span> <span>30k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>Mushroom Soup</span> <span>35k</span></li>
+                    <li class="flex justify-between border-b pb-2"><span>APK Fried Rice</span> <span>38k</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<br />
+<section id="ABOUT US" class="py-12 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold mb-6 text-pink-800 text-center">ABOUT US</h2>
+
+        <!-- About Content -->
+        <div class="text-gray-700 space-y-4 mb-8 text-lg">
+            <p>
+                Let me introduce my self, I am Rhezon Sanusi one of founder Anak Panah Social Café that i created in Semarang – Central Java at 9th September 2017, it is a long journey till this 2025 that we have approximately 13 franchise outlets in Central Java (Semarang have 6 outlets, Solo have 2 outlets, and the rest are Yogyakarta, Salatiga, Kudus, Pekalongan and Jepara both have 1 outlet).
+            </p>
+            We didn’t just follow the trend in a coffee menu, but you can find our best signature menu that is totally can not find in some others café and till now we still keep improving and updating to serve our best to you all my customers! So if you have any correction in our menu, or something else that brings inconvenience to you, in our humble ways kindly assist to write it down in (Any suggestion or appreciation from you we will hear it!) Everyone deserve to be a lifesaver.
+            </p>
+            <p class="text-lg md:text-xl font-sans font-semibold text-gray-900 text-center mt-6">
+                ☕ Your perfect experience waits at Anak Panah Coffee! ☕
+            </p>
+        </div>
+
+        <!-- Feedback Section -->
+        <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">We'd Love Your Feedback</h3>
+            <textarea
+                class="w-full border border-gray-300 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
+                rows="5"
+                placeholder="Share your thoughts, advice, or critiques..."
+            ></textarea>
+            <button
+                class="mt-4 bg-pink-600 text-white py-2 px-6 rounded-lg hover:bg-pink-700 transition">
+                Submit
+            </button>
+        </div>
+
+        <!-- Google Maps Section -->
+        <div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Find Us</h3>
+            <p class="mb-4">We have 13 locations! Visit the one closest from you.</p>
+            <p class="mb-4 font-mono font-semibold">SEMARANG</p>
+
+            <!-- Responsive Grid for Google Maps -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-white rounded-lg shadow-md p-4">
+                <!-- Replace with actual 13 Google Maps iframes -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.0863595870787!2d110.429623976888!3d-6.999111468554407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708c994ab13d29%3A0x8535cdd41e2df4ec!2sAnak%20Panah%20Kopi!5e0!3m2!1sen!2sid!4v1738765984052!5m2!1sen!2sid"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31680.694160531057!2d110.41159937709455!3d-6.999063093367747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b376f7d7797%3A0x3e7dcc7bc99bf2bd!2sAnak%20Panah%20Kopi%20Gajah%20Mada%20Plus!5e0!3m2!1sen!2sid!4v1738766034878!5m2!1sen!2sid"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31680.694160531057!2d110.41159937709455!3d-6.999063093367747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70f5e3ef0d646f%3A0x5fc698a0b1db1b96!2sAnak%20Panah%20Kopi%20Go%20Puri!5e0!3m2!1sen!2sid!4v1738766068468!5m2!1sen!2sid"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31683.20303788064!2d110.3728941743164!3d-6.962006299999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70f523997dce23%3A0x954f887115fcb9ea!2sAnak%20Panah%20Kopi%20Bizz!5e0!3m2!1sen!2sid!4v1738766116668!5m2!1sen!2sid"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253472.69819135225!2d109.88374178364276!3d-6.9488990318066515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70f3001c3a9c39%3A0xb25a8a4840bc2fd6!2sANAK%20PANAH%20KOPI%20%22RS%20Panti%20Wilasa%22%20CITARUM!5e0!3m2!1sen!2sid!4v1738766219850!5m2!1sen!2sid"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253472.69819135225!2d109.88374178364276!3d-6.9488990318066515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708df08b36515b%3A0xc112733d433780fb!2sAnak%20Panah%20Kopi%20DipoHub!5e0!3m2!1sen!2sid!4v1738766243827!5m2!1sen!2sid"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+            </div>
+            <br/>
+                <p class="mb-4 font-mono font-semibold">SOLO</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 bg-white rounded-lg shadow-md p-4">
+                    <!-- Replace with actual 13 Google Maps iframes -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253123.27519132028!2d110.52075999453122!3d-7.569400099999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a17fe2d2c7529%3A0x92d3100ec62c095f!2sAnak%20Panah%20Kopi%20Bizz%20Keprabon!5e0!3m2!1sen!2sid!4v1738766262223!5m2!1sen!2sid"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31638.835676102724!2d110.79721527746634!3d-7.590815325528617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a3d4b3a43b54f%3A0x48022ce6062f0662!2sAnak%20Panah%20Kopi%20Plus%20Solo%20Baru!5e0!3m2!1sen!2sid!4v1738766285589!5m2!1sen!2sid"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+                </div> <br/>
+                <p class="mb-4 font-mono font-semibold">SALATIGA</p>
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 bg-white rounded-lg shadow-md p-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253472.69819135225!2d109.88374178364276!3d-6.9488990318066515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a7911ff24856d%3A0x8e547c09624a3ed2!2sAnak%20Panah%20Kopi%20Salatiga!5e0!3m2!1sen!2sid!4v1738766165281!5m2!1sen!2sid"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div> <br/>
+                <p class="mb-4 font-mono font-semibold">YOGYAKARTA</p>
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 bg-white rounded-lg shadow-md p-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0245419322387!2d110.35034537689565!3d-7.787222477279665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59899dd37ce9%3A0x3b5314f2d8376d86!2sAnak%20Panah%20Kopi%20Bizz%20HOS!5e0!3m2!1sen!2sid!4v1738769442395!5m2!1sen!2sid"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div> <br/>
+                <p class="mb-4 font-mono font-semibold">PEKALONGAN</p>
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 bg-white rounded-lg shadow-md p-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9139705068947!2d109.66232077688689!3d-6.900891667537941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70255ccf84d215%3A0xe5350768d3d99af6!2sAnak%20Panah%20Kopi%20%2B%20Pekalongan!5e0!3m2!1sen!2sid!4v1738766361829!5m2!1sen!2sid"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div> <br/>
+                <p class="mb-4 font-mono font-semibold">KUDUS</p>
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 bg-white rounded-lg shadow-md p-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.7120464177774!2d110.84033857688614!3d-6.804841066559153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70c579a671535b%3A0xa8e97daa506fbbe6!2sAnak%20Panah%20Kopi%20Kudus!5e0!3m2!1sen!2sid!4v1738766323011!5m2!1sen!2sid"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div> <br/>
+                <p class="mb-4 font-mono font-semibold">JEPARA</p>
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 bg-white rounded-lg shadow-md p-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4362208358634!2d110.6605544768841!3d-6.592579064449447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e711f0023a3e959%3A0x6ca8fd5cab5ce5e7!2sAnak%20Panah%20Kopi%20Jepara!5e0!3m2!1sen!2sid!4v1738766346299!5m2!1sen!2sid"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div> <br/>
+        </div>
+    </div>
+</section>
+<footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2018 Anak Panah Coffee. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
+<!-- https://play.tailwindcss.com/AI28C3IAMT -->
